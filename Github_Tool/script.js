@@ -19,7 +19,10 @@
         {
           throw Error(response.status.Text);
         }
+        else
+        {
           return response.json();
+        }
         })
         .then(function (user) {
           console.log(user.name);
